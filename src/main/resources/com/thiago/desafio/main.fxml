@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="448.9609375" prefWidth="563.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.thiago.desafio.Controller">
+  <children>
+    <Button fx:id="btnGerarSha1Id" layoutX="445.0" layoutY="166.0" mnemonicParsing="false" onAction="#onEncrypt" text="Gerar SHA1" />
+    <Button fx:id="btjDecifrarId" layoutX="445.0" layoutY="124.0" mnemonicParsing="false" onAction="#onDecrypt" text="Decifrar" />
+    <Button fx:id="btnSalvarId" layoutX="445.0" layoutY="39.0" mnemonicParsing="false" onAction="#onSave" text="Salvar" />
+    <Button fx:id="btnEnviarReqId" layoutX="445.0" layoutY="211.0" mnemonicParsing="false" onAction="#onSend" text="Enviar" />
+    <Button fx:id="btnLerId" layoutX="443.0" layoutY="79.0" mnemonicParsing="false" onAction="#onRead" text="Ler Arquivo" />
+    <TextArea fx:id="txtAreaId" layoutX="24.0" layoutY="295.0" prefHeight="139.9609375" prefWidth="421.0" text="" wrapText="true" />
+    <TextField fx:id="fieldNumCasasId" layoutX="54.0" layoutY="38.0" prefWidth="349.0" text="" />
+    <TextField fx:id="fieldDecifradoId" layoutX="54.0" layoutY="181.0" prefWidth="349.0" text="" />
+    <TextField fx:id="fieldTokenId" layoutX="54.0" layoutY="86.0" prefWidth="349.0" text="" />
+    <TextField fx:id="fieldCifradoId" layoutX="54.0" layoutY="135.0" prefWidth="349.0" text="" />
+    <TextField fx:id="fieldResCriptogId" layoutX="54.0" layoutY="232.0" prefWidth="349.0" />
+    <Label layoutX="54.0" layoutY="22.0" text="Numero de casas" />
+    <Label layoutX="54.0" layoutY="70.0" text="Token" />
+    <Label layoutX="54.0" layoutY="119.0" text="Cifrado" />
+    <Label layoutX="54.0" layoutY="165.0" text="Decifrado" />
+    <Label layoutX="54.0" layoutY="216.0" text="Resumo criptográfico" />
+    <Label layoutX="221.0" layoutY="268.0" text="Texto Json" />
+  </children>
+</AnchorPane>
